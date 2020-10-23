@@ -1,63 +1,64 @@
-<template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">web</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+  div.container
+    div.header
+      Header
+    div.section
+    div.section
+    div.section
+    div.footer
+
+      Logo
+      h1.title
+        sotsuten2021
+      div.links
+        a.button--green(href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer") Documentation
+        a.button--grey(href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer") GitHub
 </template>
 
 <script>
-export default {}
+import Card from '~/components/Card.vue'
+import Footer from '~/components/Footer.vue'
+import Header from '~/components/Header.vue'
+import Title from '~/components/Title.vue'
+
+export default {
+  components: {
+    Header,
+  }
+}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="sass">
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+@media screen and (max-width: 700px) //スマホ
+  .container
+    
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+@media screen and (min-width: 701px) //パソコン
+  .container
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-.links {
-  padding-top: 15px;
-}
+
+  .title
+    color: #35495e;
+    display: block;
+    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 100px;
+    letter-spacing: 1px;
+
+  .subtitle
+    color: #526488;
+    font-weight: 300;
+    font-size: 42px;
+    padding-bottom: 15px;
+    word-spacing: 5px;
+
+  .links
+    padding-top: 15px;
 </style>
