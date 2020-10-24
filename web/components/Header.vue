@@ -26,6 +26,8 @@ export default {
 
 @media screen and (min-width: 701px) //パソコン
   .header
-    
+    box-shadow: 0 0px 5px #ccc;
+    width: 100vw;
+
 
 </style>
