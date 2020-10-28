@@ -42,16 +42,15 @@ html
       display: flex;
       height: 60px;
       justify-content: space-between;
-      width: 100%;
+      padding: 0 10%;
+      width: 80%;
       a
         text-decoration: none;
       .link_top
         color: #333;
         font-size: 24pt;
         font-weight: 600;
-        padding: 0 0 0 24px;
       .link_listIntermal
-        padding: 0 24px 0 0;
         a
           color: #555;
           font-size: 16pt;
@@ -62,15 +61,14 @@ html
       background-color: #545E65;
       color: #fff;
       display: flex;
-      height: 80px;
+      height: 120px;
       justify-content: space-between;
-      width: 100%;
+      padding: 0 15%;
+      width: 70%;
       .footer_funLogo
         font-size: 18px;
-        padding: 0 0 0 48px;
       .footer_copyRight
         font-size: 14px;
-        padding: 0 48px 0 0;
 
 
 </style>

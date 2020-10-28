@@ -1,0 +1,27 @@
+[
+    {
+        "studentID" : "",
+        "title" : "",
+        "tag" : "",
+        "department" : "",
+        "labratory" : "",
+        "name" : "",
+        "img" : ["/img/resaerch/_01.jpg", "/img/resaerch/_02.jpg", "/img/resaerch/_03.jpg"],
+        "background" : "",
+        "contents" : "",
+        "simplifiedContents" : ""
+    },
+    {
+        "studentID" : "",
+        "title" : "",
+        "tag" : "",
+        "department" : "",
+        "labratory" : "",
+        "name" : "",
+        "img" : ["/img/resaerch/_01.jpg", "/img/resaerch/_02.jpg", "/img/resaerch/_03.jpg"],
+        "background" : "",
+        "contents" : "",
+        "simplifiedContents" : ""
+    }
+    
+]
