@@ -1,7 +1,7 @@
 <template lang="pug">
   div.container
     div.container_list.top
-
+      Card(title="俺やで")
     div.container_list.hamon
       h2 波紋
       p 
@@ -23,13 +23,18 @@
 
 <script>
 import Card from '~/components/Card.vue'
-import Footer from '~/components/Footer.vue'
-import Header from '~/components/Header.vue'
 import Title from '~/components/Title.vue'
+import researchData from '~/assets/json/research.json'
 
 export default {
   components: {
-    Header,
+    Card
+  },
+
+  data(){
+    return{
+      data: researchData
+    }
   }
 }
 </script>
