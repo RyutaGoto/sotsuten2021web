@@ -1,7 +1,7 @@
 <template lang="pug">
   div.container
     div.container_list.top
-
+      Card
     div.container_list.hamon
       h2 波紋
       p 
@@ -29,7 +29,7 @@ import Title from '~/components/Title.vue'
 
 export default {
   components: {
-    Header,
+    Card,
   }
 }
 </script>

@@ -1,13 +1,15 @@
 <template lang="pug">
   div.container
     p ここにお問い合わせ
-      
+    Card
 </template>
 
 <script>
+import Card from '~/components/Card.vue'
 
 export default {
   components: {
+    Card,
   }
 }
 </script>
