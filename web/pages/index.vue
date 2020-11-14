@@ -1,7 +1,11 @@
 <template lang="pug">
   div.container
     div.container_list.top
+<<<<<<< HEAD
       Card
+=======
+      Card(title="俺やで")
+>>>>>>> 7b2fdbc7319f593b18f5db0333fb3cd2e5a5628b
     div.container_list.hamon
       h2 波紋
       p 
@@ -23,13 +27,22 @@
 
 <script>
 import Card from '~/components/Card.vue'
-import Footer from '~/components/Footer.vue'
-import Header from '~/components/Header.vue'
 import Title from '~/components/Title.vue'
+import researchData from '~/assets/json/research.json'
 
 export default {
   components: {
+<<<<<<< HEAD
     Card,
+=======
+    Card
+  },
+
+  data(){
+    return{
+      data: researchData
+    }
+>>>>>>> 7b2fdbc7319f593b18f5db0333fb3cd2e5a5628b
   }
 }
 </script>
