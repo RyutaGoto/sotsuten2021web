@@ -2,15 +2,13 @@
   {
     "name": "contact",
     "path": "/contact",
-    "component": "/home/rick/Documents/github/sotsuten2021web/web/pages/contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_30179e0a"
+    "component": "/mnt/e/GitHub/sotsuten2021web/web/pages/contact.vue",
+    "chunkName": "pages/contact"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/rick/Documents/github/sotsuten2021web/web/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_eda37d26"
+    "component": "/mnt/e/GitHub/sotsuten2021web/web/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]

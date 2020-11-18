@@ -1,6 +1,11 @@
 <template lang="pug">
-div.card
-  p {{ title }}
+div.card(:style="{ 'background-image': 'url('+img+')' }")
+  div.bar
+    div.bar_top
+      p.name {{ name }}
+      p.laboratory {{ laboratory }}
+    div.bar_bottom
+      p.title {{ title }}
 </template>
 
 
@@ -12,7 +17,7 @@ export default {
       required: true
     },
     tag: {
-      type: String,
+      type: Object,
       required: true
     },
     laboratory: {
@@ -28,6 +33,13 @@ export default {
       required: true,
     }
   },
+  computed: {
+    styleVariables() {
+      return {
+        '--img-url': this.img,
+      };
+    },
+  }
 }
 </script>
 
@@ -39,11 +51,24 @@ export default {
 
 @media screen and (min-width: 701px) //パソコン
   .card
+    align-items: center;
+    background-color: #999;
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
     height: 300px;
-    width: 100%;
+    justify-content: flex-end;
+    width: 400px;
+    .bar
+      width: 100%;
+    .bar_top
+      display: flex;
+      justify-content: space-between;
     p
       color: #000;
       font-size: 22pt;
+      margin: 20px;
     
 
 </style>

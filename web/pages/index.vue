@@ -1,11 +1,8 @@
 <template lang="pug">
   div.container
     div.container_list.top
-<<<<<<< HEAD
-      Card
-=======
-      Card(title="俺やで")
->>>>>>> 7b2fdbc7319f593b18f5db0333fb3cd2e5a5628b
+      //Card
+      Card(:title="data[0].studentID" :tag="data[0].tag" :laboratory="data[0].laboratory" :name="data[0].name" :img="data[0].img[0]")
     div.container_list.hamon
       h2 波紋
       p 
@@ -32,9 +29,6 @@ import researchData from '~/assets/json/research.json'
 
 export default {
   components: {
-<<<<<<< HEAD
-    Card,
-=======
     Card
   },
 
@@ -42,7 +36,6 @@ export default {
     return{
       data: researchData
     }
->>>>>>> 7b2fdbc7319f593b18f5db0333fb3cd2e5a5628b
   }
 }
 </script>
