@@ -1,14 +1,13 @@
 <template lang="pug">
   div.container
     div.container_list.top
-      //Card
       div.top_title
         p.school 公立はこだて未来大学情報デザインコース
         p.exihibition 卒業研究展覧会2021「波紋」
       div.top_subtitle
         p.pickup pickup
       div.list_card
-        Card(:title="i.studentID" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]")(v-for="(i, index) in data", v-if="index < 3")
+        Card(:title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]")(v-for="(i, index) in data", v-if="index < 3")
     div.container_list.hamon
       h2.list_title 波紋
       p.list_caption
@@ -80,7 +79,7 @@ export default {
         margin: 24px auto;
     .top
       align-items: center;
-      background: no-repeat center/80% url('/background.jpg');
+      background: no-repeat center/100% url('/background.jpg');
       display: flex;
       flex-direction: column;
       height: 80vh;

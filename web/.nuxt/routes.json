@@ -6,6 +6,12 @@
     "chunkName": "pages/contact"
   },
   {
+    "name": "research",
+    "path": "/research",
+    "component": "/Users/enzo/Github/sotsuten2021web/web/pages/research/index.vue",
+    "chunkName": "pages/research/index"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/enzo/Github/sotsuten2021web/web/pages/index.vue",
