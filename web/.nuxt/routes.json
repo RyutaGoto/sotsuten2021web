@@ -2,13 +2,13 @@
   {
     "name": "contact",
     "path": "/contact",
-    "component": "/mnt/e/GitHub/sotsuten2021web/web/pages/contact.vue",
+    "component": "/Users/enzo/Github/sotsuten2021web/web/pages/contact.vue",
     "chunkName": "pages/contact"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/mnt/e/GitHub/sotsuten2021web/web/pages/index.vue",
+    "component": "/Users/enzo/Github/sotsuten2021web/web/pages/index.vue",
     "chunkName": "pages/index"
   }
 ]

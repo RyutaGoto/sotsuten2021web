@@ -3,7 +3,7 @@ div.card(:style="{ 'background-image': 'url('+img+')' }")
   div.bar
     div.bar_top
       p.name {{ name }}
-      p.laboratory {{ laboratory }}
+      p.laboratory {{ laboratory }}プロダクション
     div.bar_bottom
       p.title {{ title }}
 </template>
@@ -16,10 +16,12 @@ export default {
       type: String,
       required: true
     },
+    /*
     tag: {
       type: Object,
       required: true
     },
+    */
     laboratory: {
       type: String,
       required: true,
@@ -57,18 +59,33 @@ export default {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    font-size: 16pt;
     height: 300px;
     justify-content: flex-end;
-    width: 400px;
+    margin: 20px;
+    width: 100%;
     .bar
+      background-color: #555;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 30%;
+      justify-content: space-evenly;
       width: 100%;
     .bar_top
       display: flex;
       justify-content: space-between;
-    p
-      color: #000;
-      font-size: 22pt;
-      margin: 20px;
+      .name
+        font-size: 10pt;
+        margin: 0 16px;
+      .laboratory
+        font-size: 10pt;
+        margin: 0 16px;
+    .bar_bottom
+      display: flex;
+      .title
+        font-size: 16pt;
+        margin: 0 16px;
     
 
 </style>
