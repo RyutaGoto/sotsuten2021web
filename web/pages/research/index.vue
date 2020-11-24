@@ -1,14 +1,14 @@
 <template lang="pug">
   div.container
-    div.container_list.explanation
+    div.container_explanation
         h2.explanation_title 研究・活動の紹介
         p.explanation_caption
             | 研究活動や作品紹介は当サイトにて常設展示いたします。<br>
             | 研究者本人からのコメントや動画での紹介も行っております。<br>
             | 是非ごゆっくりご覧ください。<br>
-    div.container_list.category
-    div.container_list.research
-    div.container_list.pages
+    div.container_category
+    div.container_research
+    div.container_pages
       
 </template>
 
@@ -42,7 +42,13 @@ export default {
     background: no-repeat center/100% url('/background.jpg');
     display: flex;
     flex-direction: column;
-    .container_list
+    .container_explanation
+      text-align: center;
+      // font-size: 60pt;
+      // margin: 60%;
+      // color: #aaa;
+    //.explanation
+
 
 
 </style>
