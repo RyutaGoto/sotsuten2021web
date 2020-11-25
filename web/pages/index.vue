@@ -68,7 +68,7 @@ export default {
         display: flex;
         justify-content: space-evenly;
         // padding: 0;
-        width: 80%;
+        width: 90%;
       .list_title
         font-size: 32px;
         margin: 0 0 4vw 0;

@@ -2,22 +2,19 @@
   {
     "name": "contact",
     "path": "/contact",
-    "component": "/mnt/e/GitHub/sotsuten2021web/web/pages/contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_b495d6ac"
+    "component": "/Users/enzo/Github/sotsuten2021web/web/pages/contact.vue",
+    "chunkName": "pages/contact"
   },
   {
     "name": "research",
     "path": "/research",
-    "component": "/mnt/e/GitHub/sotsuten2021web/web/pages/research/index.vue",
-    "chunkName": "pages/research/index",
-    "_name": "_0c9f20c4"
+    "component": "/Users/enzo/Github/sotsuten2021web/web/pages/research/index.vue",
+    "chunkName": "pages/research/index"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/mnt/e/GitHub/sotsuten2021web/web/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_23e244dc"
+    "component": "/Users/enzo/Github/sotsuten2021web/web/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]

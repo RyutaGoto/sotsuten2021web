@@ -8,6 +8,7 @@
             | 是非ごゆっくりご覧ください。<br>
     div.container_category
     div.container_research
+      Card(:title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]" :contents="i.simplifiedContents")(v-for="(i, index) in data")
     div.container_pages
       
 </template>
@@ -43,11 +44,20 @@ export default {
     display: flex;
     flex-direction: column;
     .container_explanation
+      background-color: #555;
+      color: #fff;
+      padding: 16px;
       text-align: center;
-      // font-size: 60pt;
-      // margin: 60%;
-      // color: #aaa;
-    //.explanation
+      width: 100%;
+      .explanation_title
+        font-size: 20pt;
+      .explanation_caption
+        line-height: 1.4em;
+    .container_research
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 160px 0;
 
 
 
