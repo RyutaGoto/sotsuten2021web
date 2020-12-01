@@ -7,7 +7,7 @@
       div.top_subtitle
         p.pickup pickup
       div.list_card
-        Card(:title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]")(v-for="(i, index) in data", v-if="index < 3")
+        Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]")(v-for="(i, index) in data", v-if="index < 3")
     div.container_list.hamon
       h2.list_title 波紋
       p.list_caption

@@ -1,5 +1,14 @@
 <template lang="pug">
-div.card(:style="{ 'background-image': 'url('+img+')' }")
+//- div.card(:style="{ 'background-image': 'url('+img+')' }")
+  div.bar
+    div.bar_top
+      p.name {{ name }}
+      p.laboratory {{ laboratory }}プロダクション
+    div.bar_bottom
+      p.title {{ title }}
+    div.bar_hide
+      p.contents {{ contents }}
+nuxt-link.card(:style="{ 'background-image': 'url('+img+')' }" :to=" '/research/post?id=' +postID")
   div.bar
     div.bar_top
       p.name {{ name }}
@@ -14,6 +23,10 @@ div.card(:style="{ 'background-image': 'url('+img+')' }")
 <script>
 export default {
   props: {
+    postID:{
+      type: Number,
+      required: true
+    },
     title: {
       type: String,
       required: true
@@ -64,6 +77,7 @@ export default {
     height: 240px;
     justify-content: flex-end;
     margin: 16px;
+    text-decoration: none;
     transition: all 0.5s ease;
     width: 380px;
     .bar

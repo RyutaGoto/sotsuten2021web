@@ -8,7 +8,7 @@
             | 是非ごゆっくりご覧ください。<br>
     div.container_category
     div.container_research
-      Card(:title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]" :contents="i.simplifiedContents")(v-for="(i, index) in data")
+      Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]" :contents="i.simplifiedContents")(v-for="(i, index) in data")
     div.container_pages
       
 </template>
