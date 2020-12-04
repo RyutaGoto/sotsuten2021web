@@ -1,0 +1,17 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/contact.js": "pages/contact.js",
+    "pages/index.js": "pages/index.js",
+    "pages/research/index.js": "pages/research/index.js",
+    "pages/research/post/index.js": "pages/research/post/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/research/index.js": "pages/research/index.js.map",
+    "pages/research/post/index.js": "pages/research/post/index.js.map",
+    "server.js": "server.js.map"
+  }
+}
