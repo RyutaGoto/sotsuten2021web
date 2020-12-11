@@ -5,7 +5,7 @@
         nuxt-link.link_top(to="/") 卒業研究展覧会2021
       div.link
         div.link_listIntermal
-          nuxt-link(to="/") 研究紹介
+          nuxt-link(to="/research") 研究紹介
           nuxt-link(to="/") オンラインセッション
           nuxt-link(to="/contact") お問い合わせ
         div.link_listExternal
