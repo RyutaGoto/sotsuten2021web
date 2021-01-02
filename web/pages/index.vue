@@ -6,7 +6,7 @@
         p.exihibition 卒業研究展覧会2021「波紋」
       div.top_subtitle
         p.pickup pickup
-      div.list_card
+      //div.list_card
         Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]")(v-for="(i, index) in data", v-if="index < 3")
     div.container_list.hamon
       h2.list_title 波紋
@@ -19,6 +19,8 @@
       p.list_caption
         | 今年度の卒業展覧会は新型コロナウイルスの感染拡大防止の観点から、<br>対面形式ではなくオンラインでの開催といたします。<br><br>
         | そのため、研究活動や作品紹介は当サイトにて常設展示いたします。<br>研究者本人からのコメントや動画での紹介も行っております。<br>是非ごゆっくりご覧ください。<br><br>
+      div.list_card
+        Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]")(v-for="(i, index) in data", v-if="index < 3")
     div.container_list.session
       h2.list_title オンラインセッション
       p.list_caption
@@ -109,7 +111,10 @@ export default {
     .hamon
       background-color: #417BBF;
     .introduction
+      align-items: center;
       background-color: #E94917;
+      display: flex;
+      flex-direction: column;
     .session
       background-color: #6AB82C;
 

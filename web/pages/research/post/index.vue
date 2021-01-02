@@ -2,19 +2,21 @@
   div.container
     div.container_research
       div.research_abstract
-        div.research_abstract-right
-          h1 {{ data.title }}
+        div.research_abstract-first
+          img(:src="data.img[0]")
+        div.research_abstract-second
           p(v-for="(i, index) in data.tag") {{ i }}
+          h1 {{ data.title }}
           p 公立はこだて未来大学
-          p システム情報科学部{{ data.department }}学科
-          p コース {{ data.laboratory }}研究室 
+          p システム情報科学部{{ data.department }}学科 {{ data.course }}コース
+          p {{ data.laboratory }}研究室 
             //コース名をデータベースに追加
           p {{ data.name }}
-        div.research_abstract-left
-          img(:src="data.img[0]")
+          p {{ id }}
       div.research_background
       div.research_content
-    div.container_relation
+    div.container_menu
+      nuxt-link(:to=" '/research/post?id=3'") next
       
 </template>
 
@@ -30,7 +32,15 @@ export default {
 
   data(){
     return{
-      data: researchData[this.$route.query.id]
+      data: researchData[this.$route.query.id],
+      nextId: Number.parseInt(this.$route.query.id) + 1 + 2
+    }
+  },
+
+  methods: {
+    viewNext: function(){
+      this.id = this.id + 1;
+      console.log(this.id);
     }
   }
 }

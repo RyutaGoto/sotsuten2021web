@@ -71,6 +71,8 @@ export default {
     background-position: 50% 10%;
     background-repeat: no-repeat;
     background-size: 120%;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(20, 20, 20, 0.5);
     display: flex;
     flex-direction: column;
     font-size: 16pt;
@@ -81,7 +83,8 @@ export default {
     transition: all 0.5s ease;
     width: 380px;
     .bar
-      background-color: #555;
+      background: linear-gradient(rgba(0, 0, 0, 0), 40%, rgba(0, 0, 0, 0.8));
+      border-radius: 0 0 12px 12px;
       color: #fff;
       display: flex;
       flex-direction: column;
