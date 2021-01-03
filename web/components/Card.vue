@@ -111,18 +111,18 @@ export default {
         font-size: 14pt;
         margin: 0 16px;
     .bar_hide
-      // display: none;
+      display: none;
       font-size: 12pt;
       margin: 0 16px;
       opacity: 0;
-      transition: all 0.5s ease-in;
+      transition: all 0.9s ease-in;
       // transition: display 0.1s ease;
     
   .card:hover .bar
     height: 60%;
 
   .card:hover .bar_hide
-    // display: flex;
+    display: flex;
     opacity: 1;
 
 </style>

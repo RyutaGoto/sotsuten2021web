@@ -56,6 +56,9 @@ html
           font-size: 16pt;
           font-weight: 600;
           padding: 0 0 0 16px;
+    #body
+      background: no-repeat center/100% url('/background.jpg');
+      background-attachment: fixed;
     #footer
       align-items: center;
       background-color: #545E65;

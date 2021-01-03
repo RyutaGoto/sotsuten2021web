@@ -60,10 +60,10 @@ export default {
     flex-direction: column;
     margin: 0 auto;
     min-height: 100vh;
-    width: 100%;
+    width: 1366px;
     .container_list
       color: #fff;
-      padding: 5vw 20%;
+      //padding: 10vw 20%;
       text-align: center;
       width: 100%;
       .list_card
@@ -81,10 +81,10 @@ export default {
         margin: 24px auto;
     .top
       align-items: center;
-      background: no-repeat center/100% url('/background.jpg');
       display: flex;
       flex-direction: column;
       height: 80vh;
+      padding: 8vw 20%;
       .top_title
         background-color: #fff;
         box-shadow: 2px 2px 5px #666;
@@ -110,12 +110,15 @@ export default {
           margin: 10% 0;
     .hamon
       background-color: #417BBF;
+      padding: 8vw 20%;
     .introduction
       align-items: center;
       background-color: #E94917;
       display: flex;
       flex-direction: column;
+      padding: 8vw 20%;
     .session
       background-color: #6AB82C;
+      padding: 8vw 20%;
 
 </style>
