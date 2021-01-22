@@ -1,6 +1,6 @@
 <template lang="pug">
   div#app
-    div#header
+    //div#header
       div.link
         nuxt-link.link_top(to="/") 卒業研究展覧会2021
       div.link
@@ -36,6 +36,7 @@ html
 
 @media screen and (min-width: 701px) //パソコン
   #app
+    //width: 100vw;
     #header
       align-items: center;
       box-shadow: 0 4px 8px #eee;
@@ -57,8 +58,9 @@ html
           font-weight: 600;
           padding: 0 0 0 16px;
     #body
-      background: no-repeat center/100% url('/background.jpg');
-      background-attachment: fixed;
+      //background: no-repeat center/100% url('/background.jpg');
+      //background-attachment: fixed;
+      width: 100%;
     #footer
       align-items: center;
       background-color: #545E65;
@@ -67,7 +69,7 @@ html
       height: 120px;
       justify-content: space-between;
       padding: 0 15%;
-      width: 70%;
+      //width: 100%;
       .footer_funLogo
         font-size: 18px;
       .footer_copyRight

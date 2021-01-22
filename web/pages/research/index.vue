@@ -1,5 +1,6 @@
 <template lang="pug">
   div.container
+    Header
     div.container_list.explanation
         h2.explanation_title 研究・活動の紹介
         p.explanation_caption
@@ -15,6 +16,7 @@
 
 <script>
 import Card from '~/components/Card.vue'
+import Header from '~/components/Header.vue'
 import Title from '~/components/Title.vue'
 import researchData from '~/assets/json/research.json'
 
@@ -46,10 +48,10 @@ export default {
       color: #fff;
       //padding: 2vw 20%;
       text-align: center;
-      width: 100%;
+      //width: 100%;
     .explanation
       background-color: #555;
-      padding: 2vw 20%;
+      padding: 2vw 0;
       .explanation_title
         font-size: 20pt;
       .explanation_caption
@@ -59,7 +61,7 @@ export default {
       flex-wrap: wrap;
       justify-content: center;
       margin: 160px 0;
-      padding: 8vw 20%;
+      padding: 8vw 0;
 
 
 
