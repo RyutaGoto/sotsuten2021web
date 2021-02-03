@@ -5,6 +5,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _a8bdc948 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _46d18dd2 = () => interopDefault(import('../pages/research/index.vue' /* webpackChunkName: "pages/research/index" */))
+const _b04b625c = () => interopDefault(import('../pages/session.vue' /* webpackChunkName: "pages/session" */))
 const _650dad53 = () => interopDefault(import('../pages/research/post/index.vue' /* webpackChunkName: "pages/research/post/index" */))
 const _9bb75fe4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -32,6 +33,10 @@ export const routerOptions = {
     path: "/research",
     component: _46d18dd2,
     name: "research"
+  }, {
+    path: "/session",
+    component: _b04b625c,
+    name: "session"
   }, {
     path: "/research/post",
     component: _650dad53,

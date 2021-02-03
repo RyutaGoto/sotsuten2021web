@@ -1,22 +1,10 @@
 <template lang="pug">
-//- div.card(:style="{ 'background-image': 'url('+img+')' }")
-  div.bar
-    div.bar_top
-      p.name {{ name }}
-      p.laboratory {{ laboratory }}プロダクション
-    div.bar_bottom
+  div
+    nuxt-link.card(:style="{ 'background-image': 'url('+img+')' }" :to=" '/research/post?id=' +postID")
+    div.bar
       p.title {{ title }}
-    div.bar_hide
-      p.contents {{ contents }}
-nuxt-link.card(:style="{ 'background-image': 'url('+img+')' }" :to=" '/research/post?id=' +postID")
-  div.bar
-    div.bar_top
-      p.name {{ name }}
-      p.laboratory {{ laboratory }}プロダクション
-    div.bar_bottom
-      p.title {{ title }}
-    div.bar_hide
-      p.contents {{ contents }}
+      p.name {{ name }} ({{ laboratory }}プロダクション)
+      p.category {{ contents }}
 </template>
 
 
@@ -65,64 +53,47 @@ export default {
     
 
 @media screen and (min-width: 701px) //パソコン
-  .card
-    align-items: center;
-    background-color: #999;
-    background-position: 50% 10%;
-    background-repeat: no-repeat;
-    background-size: 120%;
-    border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(20, 20, 20, 0.5);
-    display: flex;
-    flex-direction: column;
-    font-size: 16pt;
-    height: 240px;
-    justify-content: flex-end;
-    margin: 16px;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    width: 380px;
+    //#header
+    .card
+      background-color: #999;
+      background-position: 50% 10%;
+      background-repeat: no-repeat;
+      background-size: 120%;
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      margin: 8px 16px;
+      opacity: 1.0;
+      text-decoration: none;
+      transition: all 0.5s;
+      width: 300px;
+
     .bar
-      background: linear-gradient(rgba(0, 0, 0, 0), 40%, rgba(0, 0, 0, 0.8));
-      border-radius: 0 0 12px 12px;
-      color: #fff;
+      color: #000;
       display: flex;
       flex-direction: column;
       height: 32%;
       justify-content: flex-start;
+      margin: 0 16px 40px 16px;
+      text-align: left;
       transition: height 0.7s;
-      width: 100%;
-    .bar_top
-      display: flex;
-      height: 16px;
-      justify-content: space-between;
-      margin: 16px 0 8px 0;
+      width: 300px;
+      .title
+        font-size: 12pt;
+        font-weight: 700;
+        margin: 6px 0;
       .name
         font-size: 10pt;
-        margin: 0 16px;
-      .laboratory
-        font-size: 10pt;
-        margin: 0 16px;
-    .bar_bottom
-      display: flex;
-      height: 20px;
-      margin: 0px 0 16px 0;
-      .title
-        font-size: 14pt;
-        margin: 0 16px;
-    .bar_hide
-      display: none;
-      font-size: 12pt;
-      margin: 0 16px;
-      opacity: 0;
-      transition: all 0.9s ease-in;
-      // transition: display 0.1s ease;
-    
-  .card:hover .bar
-    height: 60%;
+        font-weight: 600;
+        margin: 4px 0;
+      .category
+        display: inline;
+        font-size: 8pt;
+        margin: 4px 0;
+      
+    .card:hover
+      opacity: 0.5;
 
-  .card:hover .bar_hide
-    display: flex;
-    opacity: 1;
+
 
 </style>

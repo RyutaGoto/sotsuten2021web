@@ -1,16 +1,10 @@
 <template lang="pug">
   div.container
     div.container_list.top
-      nuxt-link(to="/research") 研究紹介
-      nuxt-link(to="/") オンラインセッション
-      nuxt-link(to="/contact") お問い合わせ
-      //div.top_title
-        p.school 公立はこだて未来大学情報デザインコース
-        p.exihibition 卒業研究展覧会2021「波紋」
-      //div.top_subtitle
-        p.pickup pickup
-      //div.list_card
-        Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]")(v-for="(i, index) in data", v-if="index < 3")
+      div.container_list-wrap
+        nuxt-link(to="/research") 研究紹介
+        nuxt-link(to="/") オンラインセッション
+        nuxt-link(to="/contact") お問い合わせ
     div.container_list.hamon
       h2.list_title-en ABOUT
       h2.list_title-jp 波紋
@@ -19,16 +13,18 @@
         | これまでの集大成として「波紋」をテーマとした社会に一石を投じる新たなデザインの可能性を提示する展覧会を開催します。<br><br>
         | 本展覧会が社会へ波紋を呼び、形を変えながら新たな波を起こし、起こし続けるきっかけとなることを期待しています。
     div.container_list.introduction
-      div.right
+      div.introduction_right
         h2.list_title-en INTRODUCTION
         h2.list_title-jp 研究・活動の紹介
         p.list_caption
           | 今年度の卒業展覧会は新型コロナウイルスの感染拡大防止の観点から、<br>対面形式ではなくオンラインでの開催といたします。<br><br>
           | そのため、研究活動や作品紹介は当サイトにて常設展示いたします。<br>研究者本人からのコメントや動画での紹介も行っております。<br>是非ごゆっくりご覧ください。<br><br>
-      div.left
+      div.introduction_left
         div.list_card
           Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]")(v-for="(i, index) in data", v-if="index < 3")
     div.container_list.session
+      div.session_right
+      div.session_left
       h2.list_title-en ONLINE SESSION
       h2.list_title-jp オンラインセッション
       p.list_caption
@@ -65,83 +61,72 @@ export default {
   .container
     align-items: center;
     background: no-repeat center/100% url('/background-top.png');
-    background-position: 50% -1%;
+    background-position: 50% -4%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    min-height: 100vh;
+    //height: 100vh;
     .container_list
       //padding: 10vw 20%;
-      text-align: center;
       .list_card
         display: flex;
         justify-content: space-evenly;
+        //text-align: center;
         width: 90%;
       .list_title-en
         color: #000;
-        font-size: 50px;
-        margin: -20px 0;
+        font-size: 28pt;
+        margin: -16px 0;
       .list_title-jp
         color: #fff;
         background-color: #000;
-        font-size: 30px;
+        font-size: 16pt;
         margin: 0 0 4vw 0;
-        padding: 10px 15px;
+        padding: 5px 8px;
         width: auto;
       .list_caption
         color: #000;
         font-feature-settings: "palt" 1;
-        font-size: 18px;
+        font-size: 12pt;
+        font-weight: 600;
         line-height: 1.8;
-        padding: 24px 16%;
+        margin: 0;
+        padding: 24px 8%;
         //width: 100%;
     .top
-      align-items: flex-end;
-      display: flex;
-      flex-direction: row;
-      height: 98vh;
-      justify-content: center;
-      margin: 0 0 2vw 0;
-      a
-        color: #000;
-        font-weight: 700;
-        margin: 0 80px;
-        text-decoration: none;
-      .top_title
-        background-color: #fff;
-        box-shadow: 2px 2px 5px #666;
-        color: #444;
-        margin: 16px auto 48px auto;
-        width: 45%;
-        .school
-          font-size: 14pt;
-          margin: 5% auto 1% auto;
-        .exihibition
-          font-size: 32pt;
+      height: 100vh;
+      .container_list-wrap
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        height: 95%;
+        justify-content: center;
+        a
+          color: #000;
+          font-size: 13pt;
           font-weight: 700;
-          margin: 0 auto 5% auto;
-      .top_subtitle
-        background-color: #fff;
-        box-shadow: 2px 2px 5px #666;
-        color: #555;
-        font-size: 20pt
-        font-weight: 500;
-        margin: 16px;
-        width: 10%;
-        .pickup
-          margin: 10% 0;
+          margin: 0 80px;
+          padding: 10px 10px;
+          text-decoration: none;
+          transition: background-color 0.3s, color 0.3s;
+          &:hover
+            background-color: #000;
+            color: #fff;
     .hamon
       align-items: center;
       display: flex;
       flex-direction: column;
-      padding: 10vw 0;
+      height: 70vh;
+      padding: 10vw 0 0 0;
+      text-align: center;
     .introduction
       align-items: center;
       display: flex;
       flex-direction: row;
+      height: 70vh;
       justify-content: flex-start;
       width: 60%;
-      .right
+      .introduction_right
         align-items: flex-start;
         display: flex;
         flex-direction: column;
@@ -152,12 +137,15 @@ export default {
           width: 150%;
 
         
-      .left
+      .introduction_left
         //width: 40%;
     .session
       align-items: center;
       display: flex;
       flex-direction: column;
+      height: 70vh;
       padding: 10vw 0;
+      .session_right
+      .session_left
 
 </style>

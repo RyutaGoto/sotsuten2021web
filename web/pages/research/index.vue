@@ -1,16 +1,19 @@
 <template lang="pug">
+div#research
   div.container
     Header
     div.container_list.explanation
-        h2.explanation_title 研究・活動の紹介
-        p.explanation_caption
-            | 研究活動や作品紹介は当サイトにて常設展示いたします。<br>
-            | 研究者本人からのコメントや動画での紹介も行っております。<br>
-            | 是非ごゆっくりご覧ください。<br>
-    div.container_list.category
+      h2.explanation_title-en INTRODUCTION
+      h2.explanation_title-jp 研究・活動の紹介
     div.container_list.research
-      Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]" :contents="i.simplifiedContents")(v-for="(i, index) in data")
+      p.research_caption
+        | 研究活動や作品紹介は当サイトにて常設展示いたします。<br>
+        | 研究者本人からのコメントや動画での紹介も行っております。<br>
+        | 是非ご覧ください。<br>
+      div.research_wrap
+        Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]" :contents="i.simplifiedContents")(v-for="(i, index) in data")
     div.container_list.pages
+    div.container_background
       
 </template>
 
@@ -22,7 +25,8 @@ import researchData from '~/assets/json/research.json'
 
 export default {
   components: {
-    Card
+    Card,
+    Header
   },
 
   data(){
@@ -40,28 +44,54 @@ export default {
     
 
 @media screen and (min-width: 701px) //パソコン
-  .container
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    .container_list
-      color: #fff;
-      //padding: 2vw 20%;
-      text-align: center;
-      //width: 100%;
-    .explanation
-      background-color: #555;
-      padding: 2vw 0;
-      .explanation_title
-        font-size: 20pt;
-      .explanation_caption
-        line-height: 1.4em;
-    .research
+  #research
+    .container
+      align-items: center;
+      background: no-repeat center/100% url('/background.jpg');
+      background-attachment: fixed;
+      background-position: 50% -4%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 160px 0;
-      padding: 8vw 0;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
+      .explanation
+        margin: 200px 0 0 0;
+        padding: 2vw 0 0 0;
+        position: relative;
+        text-align: center;
+        top: 20px;
+        .explanation_title-en
+          color: #000;
+          font-size: 28pt;
+          margin: -16px 0;
+        .explanation_title-jp
+          background-color: #000;
+          color: #fff;
+          display: inline-block;
+          font-size: 16pt;
+          margin: 0 0 -30px 0;
+          padding: 0px 8px;
+          width: auto;
+        .explanation_caption
+
+      .research
+        background: #fff;
+        padding: 5vh 0px;
+        .research_caption
+          font-size: 12pt;
+          font-weight: 600;
+          letter-spacing: 2px;
+          line-height: 1.6em;
+          padding: 0 0 40px 0;
+          text-align: center;
+        .research_wrap
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 0 0 120px 0;
+          //padding: 0 0 8vh 0;
+      .container_background
+
 
 
 

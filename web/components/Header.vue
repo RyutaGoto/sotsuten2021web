@@ -1,16 +1,20 @@
 <template lang="pug">
 div.header
-  div.link
-    nuxt-link.link_top(to="/") 卒業研究展覧会2021
-  div.link
-    div.link_listIntermal
-      nuxt-link(to="/") 研究紹介
-      nuxt-link(to="/") オンラインセッション
-      nuxt-link(to="/") お問い合わせ
-    div.link_listExternal
-      a(href="#" rel="noopener noreferrer" target="_blank")
-      a(href="#" rel="noopener noreferrer" target="_blank")
-      a(href="#" rel="noopener noreferrer" target="_blank")
+  div.link_wrap
+    div.link
+      nuxt-link.link_top(to="/")
+        img.icon(src='/icon-top.png')
+    div.link
+      div.link_listIntermal
+        nuxt-link(to="/research") 研究紹介
+        nuxt-link(to="/session") オンラインセッション
+        nuxt-link(to="/") お問い合わせ
+      div.link_listExternal
+        a(href="#" rel="noopener noreferrer" target="_blank")
+        a(href="#" rel="noopener noreferrer" target="_blank")
+        a(href="#" rel="noopener noreferrer" target="_blank")
+  //div.background_wrap
+    img.background(src='/background.jpg')
       
 </template>
 
@@ -32,26 +36,52 @@ export default {
     //box-shadow: 0 0px 5px #ccc;
     //width: 100vw;
   .header
-    align-items: center;
     background-color: #fff;
-    box-shadow: 0 4px 8px #eee;
+    //box-shadow: 0 4px 8px #eee;
     display: flex;
-    height: 60px;
-    justify-content: space-between;
-    padding: 0 10%;
-    width: 80%;
+    flex-direction: column;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .link_wrap
+      align-items: center;
+      display: flex;
+      flex-dirextion: row;
+      height: 80px;
+      justify-content: space-between;
+      padding: 0 5%;
     a
       text-decoration: none;
     .link_top
       color: #333;
       font-size: 24pt;
       font-weight: 600;
+      .icon
+        //background-size: cover;
+        height: 30px;
     .link_listIntermal
       a
-        color: #555;
-        font-size: 16pt;
+        color: #000;
+        font-size: 12pt;
         font-weight: 600;
-        padding: 0 0 0 16px;
+        margin: 0 32px;
+        padding: 8px 5px;
+        transition: background-color 0.3s, color 0.3s;
+        &:hover
+          background-color: #000;
+          color: #fff;
+
+    .background_wrap
+      display: block;
+      height: 120px;
+      width: 100vw;
+      .background
+        //background-size: contain;
+        //heihgt: 100%;
+        //object-fit: cover;
+        width: 100%;
 
 
 
