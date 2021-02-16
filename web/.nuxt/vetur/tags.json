@@ -23,6 +23,12 @@
   "LazyLogo": {
     "description": "Auto imported from components/Logo.vue"
   },
+  "Record": {
+    "description": "Auto imported from components/Record.vue"
+  },
+  "LazyRecord": {
+    "description": "Auto imported from components/Record.vue"
+  },
   "Title": {
     "description": "Auto imported from components/Title.vue"
   },

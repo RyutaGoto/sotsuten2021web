@@ -3,7 +3,7 @@
     div.container_list.top
       div.container_list-wrap
         nuxt-link(to="/research") 研究紹介
-        nuxt-link(to="/") オンラインセッション
+        nuxt-link(to="/session") オンラインセッション
         nuxt-link(to="/contact") お問い合わせ
     div.container_list.hamon
       h2.list_title-en ABOUT
