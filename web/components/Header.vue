@@ -8,7 +8,7 @@ div.header
       div.link_listIntermal
         nuxt-link(to="/research") 研究紹介
         nuxt-link(to="/session") オンラインセッション
-        nuxt-link(to="/") お問い合わせ
+        nuxt-link(to="/contact") お問い合わせ
       div.link_listExternal
         a(href="#" rel="noopener noreferrer" target="_blank")
         a(href="#" rel="noopener noreferrer" target="_blank")
@@ -49,7 +49,7 @@ export default {
       align-items: center;
       display: flex;
       flex-dirextion: row;
-      height: 80px;
+      height: 60px;
       justify-content: space-between;
       padding: 0 5%;
     a
@@ -60,11 +60,11 @@ export default {
       font-weight: 600;
       .icon
         //background-size: cover;
-        height: 30px;
+        height: 24px;
     .link_listIntermal
       a
         color: #000;
-        font-size: 12pt;
+        font-size: 11pt;
         font-weight: 600;
         margin: 0 32px;
         padding: 8px 5px;

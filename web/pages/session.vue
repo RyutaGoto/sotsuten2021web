@@ -169,6 +169,7 @@ export default {
         color: #000;
         display: flex;
         flex-direction: column;
+        margin-bottom: 120px;
         padding: 80px 0;
         text-align: center;
         .schedule_wrap

@@ -14,7 +14,8 @@
     div#body
       Nuxt
     div#footer
-      div.footer_funLogo 公立はこだて未来大学
+      div.footer_funLogo
+        img.logo(src="/funLogo.png")
       div.footer_copyRight ©公立はこだて未来大学　情報デザインコース
 
 </template>
@@ -60,20 +61,28 @@ html
     #body
       //background: no-repeat center/100% url('/background.jpg');
       //background-attachment: fixed;
+      //padding-bottom: 100px;
       width: 100%;
     #footer
       align-items: center;
-      background-color: #545E65;
-      color: #fff;
+      background-color: #fff;
       display: flex;
-      height: 120px;
-      justify-content: space-between;
+      flex-direction: column;
+      height: 80px;
+      justify-content: space-evenly;
       padding: 0 15%;
       //width: 100%;
       .footer_funLogo
-        font-size: 18px;
+        justify-content: center;
+        display: flex;
+        .logo
+          height: auto;
+          width: 70%
+
       .footer_copyRight
-        font-size: 14px;
+        color: #000;
+        font-size: 10pt;
+        font-weight: 700;
 
 
 </style>

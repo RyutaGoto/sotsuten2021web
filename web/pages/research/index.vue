@@ -12,8 +12,8 @@ div#research
         | 是非ご覧ください。<br>
       div.research_wrap
         Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]" :contents="i.simplifiedContents")(v-for="(i, index) in data")
-    div.container_list.pages
-    div.container_background
+    //div.container_list.pages
+    //div.container_background
       
 </template>
 
@@ -76,7 +76,8 @@ export default {
 
       .research
         background: #fff;
-        padding: 5vh 0px;
+        margin-bottom: 120px;
+        padding: 5vh 0 0 0 ;
         .research_caption
           font-size: 12pt;
           font-weight: 600;
@@ -88,8 +89,7 @@ export default {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          margin: 0 0 120px 0;
-          //padding: 0 0 8vh 0;
+          margin: 0 0 60px 0;
       .container_background
 
 

@@ -1,15 +1,22 @@
 <template lang="pug">
+div#contact
   div.container
-    p ここにお問い合わせ
-    Card
+    Header
+    div.container_list.explanation
+      h2.explanation_title-en CONTACT
+      h2.explanation_title-jp お問い合わせ
+    div.container_list.phrase
+      p.phrase-first ここにお問い合わせ
+      p.phrase-second These are dummy text. Put the correct explanation text or something right one.
+    div.container_list.form
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf_UFE_LV0mwtLdYCQV4ASzDJnr5KHh85vk0eHHCuihbL8Q0w/viewform?embedded=true" width="640" height="653" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+
 </template>
 
 <script>
-import Card from '~/components/Card.vue'
 
 export default {
   components: {
-    Card,
   }
 }
 </script>
@@ -21,7 +28,53 @@ export default {
     
 
 @media screen and (min-width: 701px) //パソコン
-  .container
+  #contact
+    .container
+      background: no-repeat center/100% url('/background.jpg');
+      background-attachment: fixed;
+      background-position: 50% -4%;
+      .explanation
+        margin: 200px 0 0 0;
+        padding: 2vw 0 0 0;
+        position: relative;
+        text-align: center;
+        top: 20px;
+        .explanation_title-en
+          color: #000;
+          font-size: 28pt;
+          margin: -16px 0;
+        .explanation_title-jp
+          background-color: #000;
+          color: #fff;
+          display: inline-block;
+          font-size: 16pt;
+          margin: 0 0 -30px 0;
+          padding: 0px 8px;
+          width: auto;
+      .phrase
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+        padding: 80px 0 48px 0;
+        width: 100%;
+        .phrase-first
+          font-size: 14pt;
+          font-weight: 600;
+          margin: 0;
+        .phrase-second
+          font-weight: 600;
+          margin-top: 4px;
+          text-align: center;
+          width: 80%;
+      .form
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 120px 0;
+        padding: 0 0 40px 0;
+        width: 100%;
     
 
 </style>
