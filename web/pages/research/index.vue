@@ -11,7 +11,7 @@ div#research
         | 研究者本人からのコメントや動画での紹介も行っております。<br>
         | 是非ご覧ください。<br>
       div.research_wrap
-        Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]" :contents="i.simplifiedContents")(v-for="(i, index) in data")
+        Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]" )(v-for="(i, index) in data")
     //div.container_list.pages
     //div.container_background
       
@@ -20,8 +20,7 @@ div#research
 <script>
 import Card from '~/components/Card.vue'
 import Header from '~/components/Header.vue'
-import Title from '~/components/Title.vue'
-import researchData from '~/assets/json/research.json'
+import researchData from '~/assets/json/jojo.json'
 
 export default {
   components: {

@@ -1,10 +1,10 @@
 <template lang="pug">
   div
-    nuxt-link.card(:style="{ 'background-image': 'url('+img+')' }" :to=" '/research/post?id=' +postID")
+    nuxt-link.card(:style="{ 'background-image': 'url('+img+')' }" :to=" '/research/post/' +postID")
     div.bar
       p.title {{ title }}
-      p.name {{ name }} ({{ laboratory }}プロダクション)
-      p.category {{ contents }}
+      p.name {{ name }} ({{ laboratory }}研究室)
+      p.category {{  }}
 </template>
 
 
@@ -28,10 +28,6 @@ export default {
       required: true,
     },
     img: {
-      type: String,
-      required: true,
-    },
-    contents: {
       type: String,
       required: true,
     }
@@ -83,8 +79,8 @@ export default {
         font-weight: 700;
         margin: 6px 0;
       .name
-        font-size: 10pt;
-        font-weight: 600;
+        font-size: 9pt;
+        font-weight: 500;
         margin: 4px 0;
       .category
         display: inline;
