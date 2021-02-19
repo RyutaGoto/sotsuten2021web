@@ -29,6 +29,12 @@
   "LazyRecord": {
     "description": "Auto imported from components/Record.vue"
   },
+  "Research": {
+    "description": "Auto imported from components/Research.vue"
+  },
+  "LazyResearch": {
+    "description": "Auto imported from components/Research.vue"
+  },
   "Title": {
     "description": "Auto imported from components/Title.vue"
   },
