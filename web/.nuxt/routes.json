@@ -3,30 +3,35 @@
     "name": "contact",
     "path": "/contact",
     "component": "/Users/enzo/Github/sotsuten2021web/web/pages/contact.vue",
-    "chunkName": "pages/contact"
+    "chunkName": "pages/contact",
+    "_name": "_a8bdc948"
   },
   {
     "name": "research",
     "path": "/research",
     "component": "/Users/enzo/Github/sotsuten2021web/web/pages/research/index.vue",
-    "chunkName": "pages/research/index"
+    "chunkName": "pages/research/index",
+    "_name": "_46d18dd2"
   },
   {
     "name": "session",
     "path": "/session",
     "component": "/Users/enzo/Github/sotsuten2021web/web/pages/session.vue",
-    "chunkName": "pages/session"
+    "chunkName": "pages/session",
+    "_name": "_b04b625c"
   },
   {
     "name": "research-post-id",
     "path": "/research/post/:id?",
     "component": "/Users/enzo/Github/sotsuten2021web/web/pages/research/post/_id.vue",
-    "chunkName": "pages/research/post/_id"
+    "chunkName": "pages/research/post/_id",
+    "_name": "_70bce87b"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/enzo/Github/sotsuten2021web/web/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_9bb75fe4"
   }
 ]

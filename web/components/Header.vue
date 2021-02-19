@@ -11,8 +11,10 @@ div.header
         nuxt-link(to="/contact") お問い合わせ
       div.link_listExternal
         a(href="#" rel="noopener noreferrer" target="_blank")
+          object.twitter(type="image/svg+xml" data="/svg/twitter.svg")
         a(href="#" rel="noopener noreferrer" target="_blank")
-        a(href="#" rel="noopener noreferrer" target="_blank")
+          object.facebook(type="image/svg+xml" data="/svg/facebook.svg")
+        //a(href="#" rel="noopener noreferrer" target="_blank")
   //div.background_wrap
     img.background(src='/background.jpg')
       
@@ -52,6 +54,8 @@ export default {
       height: 60px;
       justify-content: space-between;
       padding: 0 5%;
+      .link
+        display: flex;
     a
       text-decoration: none;
     .link_top
@@ -66,12 +70,24 @@ export default {
         color: #000;
         font-size: 11pt;
         font-weight: 600;
-        margin: 0 32px;
+        margin: 0 12px;
         padding: 8px 5px;
         transition: background-color 0.3s, color 0.3s;
         &:hover
           background-color: #000;
           color: #fff;
+    .link_listExternal
+      a
+        display: inline-block;
+        margin: 0 12px;
+        .twitter
+          height: 20px;
+          pointer-events: none;
+          width: auto;
+        .facebook
+          height: 20px;
+          pointer-events: none;
+          width: auto;
 
     .background_wrap
       display: block;
