@@ -24,7 +24,57 @@ export default {
 <style lang="sass">
 
 @media screen and (max-width: 700px) //スマホ
-  .container
+  #contact
+    .container
+      background: no-repeat url('/background.jpg');
+      background-attachment: fixed;
+      background-position: 50% 50%;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
+      .explanation
+        margin: 120px 0 0 0;
+        padding: 2vw 0 0 0;
+        position: relative;
+        text-align: center;
+        top: 20px;
+        .explanation_title-en
+          color: #000;
+          font-size: 20pt;
+          margin: -8px 0;
+        .explanation_title-jp
+          background-color: #000;
+          color: #fff;
+          display: inline-block;
+          font-size: 12pt;
+          margin: 0 0 -30px 0;
+          padding: 2px 5px;
+          width: auto;
+      .phrase
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+        padding: 80px 0 48px 0;
+        width: 100%;
+        .phrase-first
+        .phrase-second
+          font-size: 10pt;
+          font-weight: 600;
+          margin-top: 4px;
+          text-align: center;
+          width: 80%;
+      .form
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 60px 0;
+        padding: 0 0 40px 0;
+        width: 100%;
+    
     
 
 @media screen and (min-width: 701px) //パソコン

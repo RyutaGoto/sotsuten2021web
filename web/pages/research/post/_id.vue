@@ -45,7 +45,74 @@ export default {
 <style lang="sass">
 
 @media screen and (max-width: 700px) //スマホ
-  .container
+  #post
+    .container
+      background: url('');
+      .container_research
+        .research_list
+        .abstract
+          .abstract-first
+            .visual
+              height: auto;
+              object-fit: cover;
+              width: 100vw;
+          .abstract-second
+            padding: 0 36px;
+            .title
+              font-size: 14pt
+              font-weight: 800;
+              margin: 16px auto 0 auto;
+            .affiliation
+              font-size: 12pt;
+              font-weight: 600;
+              margin: 8px auto 0 auto;
+            .tag
+              display: flex;
+              flex-wrap: wrap;
+              .tag_item
+                background-color: #000;
+                color: #fff;
+                font-size: 9pt;
+                font-weight: 600;
+                margin: 4px 4px 0 0;
+                padding: 2px 4px;
+        .background
+        .content
+      .container_menu
+        display: flex;
+        justify-content: center;
+        margin: 10vh 0 10vh 0;
+        .research_link
+          align-items: center;
+          background-color: #fff;
+          display: flex;
+          flex-direction: row;
+          outline: 3px solid #000;
+          padding: 0 30px 0 70px;
+          width: 160px;
+          transition: background-color 0.3s, border-top 0.3s, border-right 0.3s;
+          &:hover
+            background-color: #000;
+            .arrow-right
+              border-top: solid 2px #fff;
+              border-right: solid 2px #fff;
+          a
+            color: #000;
+            font-size: 12pt;
+            font-weight: 700;
+            padding: 12px 40px 12px 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+            &:hover
+              color: #fff;
+          .arrow-right
+            border-top: solid 2px #000;
+            border-right: solid 2px #000;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+
+
     
 
 @media screen and (min-width: 701px) //パソコン

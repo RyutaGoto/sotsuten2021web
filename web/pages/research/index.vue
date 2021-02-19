@@ -40,9 +40,10 @@ export default {
   #research
     .container
       align-items: center;
-      background: no-repeat center/100% url('/background.jpg');
+      background: no-repeat url('/background.jpg');
       background-attachment: fixed;
-      background-position: 50% -4%;
+      background-position: 50% 50%;
+      background-size: cover;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -69,20 +70,17 @@ export default {
 
       .research
         background: #fff;
-        margin-bottom: 120px;
+        margin-bottom: 60px;
         padding: 5vh 0 0 0 ;
         .research_caption
-          font-size: 12pt;
-          font-weight: 600;
-          letter-spacing: 2px;
-          line-height: 1.6em;
-          padding: 0 0 40px 0;
-          text-align: center;
+          display: none;
         .research_wrap
+          align-items: center;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          margin: 0 0 60px 0;
+          margin: 0;
+          //width: 100%;
       .container_background
 
     
