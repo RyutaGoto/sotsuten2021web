@@ -19,7 +19,6 @@ div#post
       div.research_link
         nuxt-link(to="/research") 一覧へ戻る
         div.arrow-right
-      //nuxt-link(:to=" '/research/post?id=3'") next
       
 </template>
 
@@ -123,9 +122,10 @@ export default {
         padding: 0 10vw;
         .research_list
         .abstract
+          margin-top: 60px;
           .abstract-first
             .visual
-              height: 90vh;
+              height: auto;
               object-fit: cover;
               width: 80vw;
           .abstract-second

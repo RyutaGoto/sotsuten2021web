@@ -63,7 +63,7 @@ export default {
   #top
     .container
       align-items: center;
-      background: no-repeat center/100% url('/background-top-sp.png');
+      background: no-repeat center/100% url('/sotsuten2021/background-top-sp.png');
       background-position: 50% 0%;
       display: flex;
       flex-direction: column;
@@ -168,7 +168,7 @@ export default {
   #top
     .container
       align-items: center;
-      background: no-repeat center/100% url('/background-top.png');
+      background: no-repeat center/100% url('/sotsuten2021/background-top.png');
       background-position: 50% -4%;
       display: flex;
       flex-direction: column;

@@ -73,7 +73,7 @@ export default {
   #session
     .container
       align-items: center;
-      background: no-repeat center/100% url('/background.jpg');
+      background: no-repeat center/100% url('/sotsuten2021/background.jpg');
       background-attachment: fixed;
       background-position: 50% -4%;
       display: flex;

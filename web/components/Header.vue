@@ -3,7 +3,7 @@ div.header
   div.link_wrap
     div.link
       nuxt-link.link_top(to="/")
-        img.icon(src='/icon-top.png')
+        img.icon(src='/sotsuten2021/icon-top.png')
     div.link.nav
       div#nav-drawer
         input#nav-input.nav-unshown(type="checkbox")

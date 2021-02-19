@@ -4,7 +4,7 @@
       Nuxt
     div#footer
       div.footer_funLogo
-        img.logo(src="/funLogo.png")
+        img.logo(src="/sotsuten2021/funLogo.png")
       div.footer_copyRight ©公立はこだて未来大学　情報デザインコース2021
 </template>
 

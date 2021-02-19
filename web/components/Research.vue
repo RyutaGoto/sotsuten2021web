@@ -110,7 +110,7 @@ export default {
         width: 80%;
     .research-bottom
       .visual
-        height: 90vh;
+        height: auto;
         object-fit: cover;
         width: 80vw;
 

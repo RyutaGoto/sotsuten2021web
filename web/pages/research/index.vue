@@ -40,7 +40,7 @@ export default {
   #research
     .container
       align-items: center;
-      background: no-repeat url('/background.jpg');
+      background: no-repeat url('/sotsuten2021/background.jpg');
       background-attachment: fixed;
       background-position: 50% 50%;
       background-size: cover;
@@ -89,7 +89,7 @@ export default {
   #research
     .container
       align-items: center;
-      background: no-repeat center/100% url('/background.jpg');
+      background: no-repeat center/100% url('/sotsuten2021/background.jpg');
       background-attachment: fixed;
       background-position: 50% -4%;
       display: flex;

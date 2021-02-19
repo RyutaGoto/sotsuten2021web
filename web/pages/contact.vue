@@ -26,7 +26,7 @@ export default {
 @media screen and (max-width: 700px) //スマホ
   #contact
     .container
-      background: no-repeat url('/background.jpg');
+      background: no-repeat url('/sotsuten2021/background.jpg');
       background-attachment: fixed;
       background-position: 50% 50%;
       background-size: cover;
@@ -80,7 +80,7 @@ export default {
 @media screen and (min-width: 701px) //パソコン
   #contact
     .container
-      background: no-repeat center/100% url('/background.jpg');
+      background: no-repeat center/100% url('/sotsuten2021/background.jpg');
       background-attachment: fixed;
       background-position: 50% -4%;
       display: flex;
