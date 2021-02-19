@@ -12,8 +12,6 @@ div#research
         | 是非ご覧ください。<br>
       div.research_wrap
         Card(:postID="index" :title="i.title" :tag="i.tag" :laboratory="i.laboratory" :name="i.name" :img="i.img[0]" )(v-for="(i, index) in data")
-    //div.container_list.pages
-    //div.container_background
       
 </template>
 
@@ -39,7 +37,54 @@ export default {
 <style lang="sass" >
 
 @media screen and (max-width: 700px) //スマホ
-  .container
+  #research
+    .container
+      align-items: center;
+      background: no-repeat center/100% url('/background.jpg');
+      background-attachment: fixed;
+      background-position: 50% -4%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
+      .explanation
+        margin: 120px 0 0 0;
+        padding: 2vw 0 0 0;
+        position: relative;
+        text-align: center;
+        top: 20px;
+        .explanation_title-en
+          color: #000;
+          font-size: 20pt;
+          margin: -8px 0;
+        .explanation_title-jp
+          background-color: #000;
+          color: #fff;
+          display: inline-block;
+          font-size: 12pt;
+          margin: 0 0 -30px 0;
+          padding: 2px 5px;
+          width: auto;
+        .explanation_caption
+
+      .research
+        background: #fff;
+        margin-bottom: 120px;
+        padding: 5vh 0 0 0 ;
+        .research_caption
+          font-size: 12pt;
+          font-weight: 600;
+          letter-spacing: 2px;
+          line-height: 1.6em;
+          padding: 0 0 40px 0;
+          text-align: center;
+        .research_wrap
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 0 0 60px 0;
+      .container_background
+
     
 
 @media screen and (min-width: 701px) //パソコン

@@ -60,8 +60,109 @@ export default {
 <style lang="sass">
 
 @media screen and (max-width: 700px) //スマホ
-  .container
-    
+  #top
+    .container
+      align-items: center;
+      background: no-repeat center/100% url('/background-top-sp.png');
+      background-position: 50% 0%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      z-index: -1;
+      .container_list
+        .list_card
+          display: flex;
+          justify-content: space-evenly;
+          width: 90%;
+        .list_title-en
+          color: #000;
+          font-size: 20pt;
+          margin: -8px 0;
+        .list_title-jp
+          color: #fff;
+          background-color: #000;
+          font-size: 12pt;
+          margin: 0 0 4vw 0;
+          padding: 2px 5px;
+          width: auto;
+        .list_caption
+          color: #000;
+          font-feature-settings: "palt" 1;
+          font-size: 10pt;
+          font-weight: 600;
+          line-height: 1.8;
+          margin: 0;
+          padding: 24px 8%;
+          text-align: left;
+        .container_link
+          align-items: center;
+          background-color: #fff;
+          display: flex;
+          flex-direction: row;
+          outline: 3px solid #000;
+          padding: 0 5% 0 16%;
+          transition: background-color 0.3s, border-top 0.3s, border-right 0.3s;
+          width: 50%;
+          &:hover
+            background-color: #000;
+            .arrow-right
+              border-top: solid 2px #fff;
+              border-right: solid 2px #fff;
+          a
+            color: #000;
+            font-size: 12pt;
+            font-weight: 700;
+            padding: 12px 50px 12px 30px;
+            text-decoration: none;
+            transition: color 0.3s;
+            &:hover
+              color: #fff;
+          .arrow-right
+            border-top: solid 2px #000;
+            border-right: solid 2px #000;
+            width: 6px;
+            height: 6px;
+            transform: rotate(45deg);
+      .top
+        height: 100vh;
+        .container_list-wrap
+          display: none;
+      .hamon
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        padding: 0;
+        width: 80%;
+        .list_caption
+          padding: 0;
+      .introduction
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        justify-content: center;
+        width: 80%;
+        .introduction_right
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          .list_caption
+            margin: 0;
+            padding: 0;
+        .introduction_left
+      .session
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        padding: 10vw 0;
+        width: 80%;
+        .list_caption
+          padding: 0;
+        .session_right
+        .session_left
+ 
 
 @media screen and (min-width: 701px) //パソコン
   #top
