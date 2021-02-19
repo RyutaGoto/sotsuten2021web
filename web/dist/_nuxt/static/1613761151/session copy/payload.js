@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/session copy", {data:[{}],fetch:[],mutations:void 0});

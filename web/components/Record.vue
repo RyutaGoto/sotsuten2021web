@@ -37,7 +37,27 @@ export default {
 
 <style lang="sass" scoped>
 @media screen and (max-width: 700px) //スマホ
-  .card
+  #Record
+    display: flex;
+    margin-bottom: 12px;
+    .bar_left
+      font-size: 10pt;
+      font-weight: 600;
+      letter-spacing: -1px;
+      width: 35%;
+      .time
+        margin-top: 0;
+    .bar_right
+      margin-left: 1%;
+      width: 64%;
+      .title
+        font-size: 11pt
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin-top: 0;
+      .name
+        font-size: 10pt;
+        margin-top: 0;
     
 
 @media screen and (min-width: 701px) //パソコン

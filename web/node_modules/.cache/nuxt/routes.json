@@ -21,6 +21,13 @@
     "_name": "_b04b625c"
   },
   {
+    "name": "session copy",
+    "path": "/session copy",
+    "component": "/Users/enzo/Github/sotsuten2021web/web/pages/session copy.vue",
+    "chunkName": "pages/session copy",
+    "_name": "_8929109a"
+  },
+  {
     "name": "research-post-id",
     "path": "/research/post/:id?",
     "component": "/Users/enzo/Github/sotsuten2021web/web/pages/research/post/_id.vue",

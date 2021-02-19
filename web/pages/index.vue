@@ -177,7 +177,7 @@ export default {
       &:before
         display: block;
         width: 100%;
-        height: 100%;
+        height: 105%;
         content: " ";
         position: absolute;
         background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), 80%, rgba(255, 255, 255, 0.6));

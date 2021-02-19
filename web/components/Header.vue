@@ -122,10 +122,6 @@ export default {
               flex-direction: column;
               margin: 20px 0;
               padding: 8px 5px;
-              transition: background-color 0.3s, color 0.3s;
-              &:hover
-                background-color: #000;
-                color: #fff;
               .en
                 font-size: 20pt;
                 font-weight: 800;
