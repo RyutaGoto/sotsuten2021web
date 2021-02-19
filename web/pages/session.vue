@@ -20,10 +20,10 @@ div#session
         div.arrow-right
     div.container_list.schedule
       h2.list_title タイムスケジュール
+      p.annotaion ※記載されている時間は目安となります。
       div.schedule_wrap
         div.schedule-left
           p.schedule_date #[span 2.20]土
-          //p {{ data.first[0] }}
           div.schedule_record_wrap
             Record(:time="i.time" :title="i.title" :name="i.name" :contents="i.contents")(v-for="i in data.first")
         div.schedule-right
