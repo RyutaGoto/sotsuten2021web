@@ -10,13 +10,13 @@ div#session
       p.dates_date 2021.#[span 2.20]土#[span ／2.21]日
       p.dates_time 10:30~(AM)
       p.dates_caption 
-        | YouTubeにて配信開始予定。<br>
-        | This section will be filled by some text. This is the dummy. This section will be filled by some text. This is the dummy.<br>
+        | YouTubeにて配信開始予定！<br>
+        | 発表内容へのご意見・ご質問はぜひチャット欄へ！発表後にMCがお答えさせていただくかもしれません。<br>
       p.dates_supplement
-        | This section will be filled by some text. This is the dummy. This section will be filled by some text. This is the dummy.<br>
-        | This section will be filled by some text. This is the dummy. This section will be filled by some text. This is the dummy.<br>
+        | オンラインセッションのアーカイブ動画は予告なく非公開にする場合がございます。<br>
+        | あらかじめご了承ください。<br>
       div.dates_link
-        a(href="https://www.google.co.jp/" target="_blank" rel="noopener noreferrer") 配信チャンネルを開く
+        a(href="https://www.youtube.com/channel/UC0t8OgTsK7UfqohpG0HSQMw" target="_blank" rel="noopener noreferrer") 配信チャンネルを開く
         div.arrow-right
     div.container_list.schedule
       h2.list_title タイムスケジュール
@@ -33,11 +33,11 @@ div#session
       div.schedule_link_wrap
         div.link-left
           div.link_button
-            a(href="https://www.google.co.jp/" target="_blank" rel="noopener noreferrer") 配信ページを開く
+            a(href="https://youtu.be/G6QZyTiMoyQ" target="_blank" rel="noopener noreferrer") 配信ページを開く
             div.arrow-right
         div.link-right
           div.link_button
-            a(href="https://www.google.co.jp/" target="_blank" rel="noopener noreferrer") 配信ページを開く
+            a(href="https://youtu.be/h-o7RfnZTJo" target="_blank" rel="noopener noreferrer") 配信ページを開く
             div.arrow-right
     //div.container_list.guest
       h2.list_title ゲスト紹介
@@ -149,7 +149,7 @@ export default {
               border-right: solid 2px #fff;
           a
             color: #000;
-            font-size: 12pt;
+            font-size: 10pt;
             font-weight: 700;
             padding: 12px 100px 12px 30px;
             text-decoration: none;
@@ -201,7 +201,7 @@ export default {
             display: flex;
             flex-direction: row;
             outline: 3px solid #000;
-            padding: 0 30px 0 100px;
+            padding: 0 30px 0 90px;
             transition: background-color 0.3s, border-top 0.3s, border-right 0.3s;
             &:hover
               background-color: #000;
@@ -210,9 +210,9 @@ export default {
                 border-right: solid 2px #fff;
             a
               color: #000;
-              font-size: 12pt;
+              font-size: 10pt;
               font-weight: 700;
-              padding: 12px 80px 12px 50px;
+              padding: 12px 80px 12px 30px;
               text-decoration: none;
               transition: color 0.3s;
               &:hover

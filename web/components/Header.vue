@@ -10,9 +10,9 @@ div.header
         nuxt-link(to="/session") オンラインセッション
         nuxt-link(to="/contact") お問い合わせ
       div.link_listExternal
-        a(href="#" rel="noopener noreferrer" target="_blank")
+        a(href="https://twitter.com/FUN2021sotsuten" rel="noopener noreferrer" target="_blank")
           object.twitter(type="image/svg+xml" data="/svg/twitter.svg")
-        a(href="#" rel="noopener noreferrer" target="_blank")
+        a(href="https://www.facebook.com/sotsuten.funIFD/" rel="noopener noreferrer" target="_blank")
           object.facebook(type="image/svg+xml" data="/svg/facebook.svg")
         //a(href="#" rel="noopener noreferrer" target="_blank")
   //div.background_wrap

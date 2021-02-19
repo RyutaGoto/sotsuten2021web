@@ -1,4 +1,5 @@
 <template lang="pug">
+div#top
   div.container
     div.container_list.top
       div.container_list-wrap
@@ -63,127 +64,138 @@ export default {
     
 
 @media screen and (min-width: 701px) //パソコン
-  .container
-    align-items: center;
-    background: no-repeat center/100% url('/background-top.png');
-    background-position: 50% -4%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    //height: 100vh;
-    .container_list
-      //padding: 10vw 20%;
-      .list_card
-        display: flex;
-        justify-content: space-evenly;
-        //text-align: center;
-        width: 90%;
-      .list_title-en
-        color: #000;
-        font-size: 28pt;
-        margin: -16px 0;
-      .list_title-jp
-        color: #fff;
-        background-color: #000;
-        font-size: 16pt;
-        margin: 0 0 4vw 0;
-        padding: 5px 8px;
-        width: auto;
-      .list_caption
-        color: #000;
-        font-feature-settings: "palt" 1;
-        font-size: 12pt;
-        font-weight: 600;
-        line-height: 1.8;
-        margin: 0;
-        padding: 24px 8%;
-        //width: 100%;
-      .container_link
-        align-items: center;
-        background-color: #fff;
-        display: flex;
-        flex-direction: row;
-        outline: 3px solid #000;
-        padding: 0 30px 0 100px;
-        transition: background-color 0.3s, border-top 0.3s, border-right 0.3s;
-        &:hover
+  #top
+    .container
+      align-items: center;
+      background: no-repeat center/100% url('/background-top.png');
+      background-position: 50% -4%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      z-index: -1;
+      &:before
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: " ";
+        position: absolute;
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), 80%, rgba(255, 255, 255, 0.6));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), 80%, rgba(255, 255, 255, 0.6));
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 80%, rgba(255, 255, 255, 0.6));
+      .container_list
+        //padding: 10vw 20%;
+        .list_card
+          display: flex;
+          justify-content: space-evenly;
+          //text-align: center;
+          width: 90%;
+        .list_title-en
+          color: #000;
+          font-size: 28pt;
+          margin: -16px 0;
+        .list_title-jp
+          color: #fff;
           background-color: #000;
-          .arrow-right
-            border-top: solid 2px #fff;
-            border-right: solid 2px #fff;
-        a
+          font-size: 16pt;
+          margin: 0 0 4vw 0;
+          padding: 5px 8px;
+          width: auto;
+        .list_caption
           color: #000;
+          font-feature-settings: "palt" 1;
           font-size: 12pt;
-          font-weight: 700;
-          padding: 12px 100px 12px 30px;
-          text-decoration: none;
-          transition: color 0.3s;
-          &:hover
-            color: #fff;
-        .arrow-right
-          border-top: solid 2px #000;
-          border-right: solid 2px #000;
-          width: 8px;
-          height: 8px;
-          transform: rotate(45deg);
-    .top
-      height: 100vh;
-      .container_list-wrap
-        align-items: flex-end;
-        display: flex;
-        flex-direction: row;
-        height: 95%;
-        justify-content: center;
-        a
-          color: #000;
-          font-size: 13pt;
-          font-weight: 700;
-          margin: 0 80px;
-          padding: 10px 10px;
-          text-decoration: none;
-          transition: background-color 0.3s, color 0.3s;
+          font-weight: 600;
+          line-height: 1.8;
+          margin: 0;
+          padding: 24px 8%;
+          //width: 100%;
+        .container_link
+          align-items: center;
+          background-color: #fff;
+          display: flex;
+          flex-direction: row;
+          outline: 3px solid #000;
+          padding: 0 30px 0 100px;
+          transition: background-color 0.3s, border-top 0.3s, border-right 0.3s;
           &:hover
             background-color: #000;
-            color: #fff;
-    .hamon
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      height: 50vh;
-      padding: 10vw 0 0 0;
-      text-align: center;
-      width: 80%;
-      .list_caption
-        padding: 0;
-    .introduction
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      height: 70vh;
-      justify-content: center;
-      width: 80%;
-      .introduction_right
+            .arrow-right
+              border-top: solid 2px #fff;
+              border-right: solid 2px #fff;
+          a
+            color: #000;
+            font-size: 12pt;
+            font-weight: 700;
+            padding: 12px 100px 12px 30px;
+            text-decoration: none;
+            transition: color 0.3s;
+            &:hover
+              color: #fff;
+          .arrow-right
+            border-top: solid 2px #000;
+            border-right: solid 2px #000;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+      .top
+        height: 100vh;
+        .container_list-wrap
+          align-items: flex-end;
+          display: flex;
+          flex-direction: row;
+          height: 95%;
+          justify-content: center;
+          a
+            color: #000;
+            font-size: 13pt;
+            font-weight: 700;
+            margin: 0 80px;
+            padding: 10px 10px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            z-index: 30;
+            &:hover
+              background-color: #000;
+              color: #fff;
+      .hamon
         align-items: center;
         display: flex;
         flex-direction: column;
+        height: 50vh;
+        padding: 10vw 0 0 0;
+        text-align: center;
+        width: 80%;
         .list_caption
-          margin: 0;
           padding: 0;
-          text-align: center;
-          //width: 150%;
-      .introduction_left
-        //width: 40%;
-    .session
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      height: 50vh;
-      padding: 10vw 0;
-      text-align: center;
-      width: 80%;
-      .list_caption
-        padding: 0;
-      .session_right
-      .session_left
+      .introduction
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        justify-content: center;
+        width: 80%;
+        .introduction_right
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          .list_caption
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            //width: 150%;
+        .introduction_left
+          //width: 40%;
+      .session
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        padding: 10vw 0;
+        text-align: center;
+        width: 80%;
+        .list_caption
+          padding: 0;
+        .session_right
+        .session_left
 
 </style>

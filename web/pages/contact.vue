@@ -6,8 +6,8 @@ div#contact
       h2.explanation_title-en CONTACT
       h2.explanation_title-jp お問い合わせ
     div.container_list.phrase
-      p.phrase-first ここにお問い合わせ
-      p.phrase-second These are dummy text. Put the correct explanation text or something right one.
+      //p.phrase-first ここにお問い合わせ
+      p.phrase-second 研究成果、およびオンラインセッション等に関するお問い合わせはこちらから
     div.container_list.form
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf_UFE_LV0mwtLdYCQV4ASzDJnr5KHh85vk0eHHCuihbL8Q0w/viewform?embedded=true" width="640" height="653" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 
@@ -33,6 +33,10 @@ export default {
       background: no-repeat center/100% url('/background.jpg');
       background-attachment: fixed;
       background-position: 50% -4%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
       .explanation
         margin: 200px 0 0 0;
         padding: 2vw 0 0 0;

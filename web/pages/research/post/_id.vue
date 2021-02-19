@@ -79,6 +79,8 @@ export default {
         .background
         .content
       .container_menu
+        display: flex;
+        justify-content: center;
         margin: 15vh 0 25vh 0;
         .research_link
           align-items: center;
