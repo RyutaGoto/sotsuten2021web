@@ -57,7 +57,7 @@ html
         display: flex;
         .logo
           height: auto;
-          width: 70%
+          max-width: 160px;
 
       .footer_copyRight
         color: #000;
@@ -102,7 +102,8 @@ html
         display: flex;
         .logo
           height: auto;
-          width: 70%
+          //object-fit: contain;
+          max-width: 180px;
 
       .footer_copyRight
         color: #000;

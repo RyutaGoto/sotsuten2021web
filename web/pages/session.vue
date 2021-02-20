@@ -362,6 +362,8 @@ export default {
             margin: 40px;
             text-align: left;
             width: 50%;
+          .link_button
+            display: none;
         .schedule_link_wrap
           display: flex;
           width: 75vw;
