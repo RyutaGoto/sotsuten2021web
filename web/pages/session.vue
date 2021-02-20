@@ -354,6 +354,16 @@ export default {
         .schedule_record_wrap
           display: flex;
           width: 75vw;
+          .schedule_date
+            border-bottom: 0.2rem solid;
+            font-size: 14pt;
+            font-weight: 700;
+            margin: 4px 0 24px 0;
+            padding: 4px;
+            text-align: left;
+            span
+              font-size: 24pt;
+              margin: 0;
           .record-left
             margin: 40px;
             text-align: left;

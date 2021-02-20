@@ -18,9 +18,9 @@ div.header
             nuxt-link(to="/contact") #[span.en CONTACT]#[span.jp お問い合わせ]
           div.link_listExternal
             a(href="https://twitter.com/FUN2021sotsuten" rel="noopener noreferrer" target="_blank")
-              object.twitter(type="image/svg+xml" data="/svg/twitter.svg")
+              object.twitter(type="image/svg+xml" data="/sotsuten2021/svg/twitter.svg")
             a(href="https://www.facebook.com/sotsuten.funIFD/" rel="noopener noreferrer" target="_blank")
-              object.facebook(type="image/svg+xml" data="/svg/facebook.svg")
+              object.facebook(type="image/svg+xml" data="/sotsuten2021/svg/facebook.svg")
           
 </template>
 
@@ -104,7 +104,7 @@ export default {
           left: 100%;
           //max-width: ;
           overflow: auto;
-          padding: 100px 0 0 0;
+          padding: 0;
           position: fixed;
           top: 60px;
           transition: .3s ease-in-out;
