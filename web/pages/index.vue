@@ -37,6 +37,13 @@ div#top
       div.container_link
         nuxt-link(to="/session") MORE
         div.arrow-right
+    div.container_list.sns
+      h2.list_title-en SNS
+      div.sns_wrap
+        div.twitter
+          <a class="twitter-timeline" data-height="100%" href="https://twitter.com/FUN2021sotsuten?ref_src=twsrc%5Etfw">Tweets by FUN2021sotsuten</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        div.facebook
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsotsuten.funIFD&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 </template>
 
 <script>
@@ -52,6 +59,11 @@ export default {
   data(){
     return{
       data: researchData
+    }
+  },
+  mounted() {
+    if (twttr) {
+      twttr.widgets.load()
     }
   }
 }
@@ -162,7 +174,26 @@ export default {
           padding: 0;
         .session_right
         .session_left
- 
+      .sns
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0 80px 0;
+        width: 80%;
+        .sns_wrap
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 60px 0 0 0;
+          width: 100%;
+          .twitter
+            height: 400px;
+            margin: 0 0 60px 0;
+            width: 100%;
+          .facebook
+            height: 400px;
+            margin: 40px 0 0 0;
 
 @media screen and (min-width: 701px) //パソコン
   #top
@@ -298,5 +329,28 @@ export default {
           padding: 0;
         .session_right
         .session_left
+      .sns
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        justify-content: center;
+        padding: 0 0 80px 0;
+        width: 80%;
+        .sns_wrap
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 60px 0 0 0;
+          width: 100%;
+          .twitter
+            height: 500px;
+            margin: 0 40px;
+            width: 300px;
+            iframe
+              height: 100%;
+          .facebook
+            margin: 0 40px;
+            //width: 50%;
 
 </style>
