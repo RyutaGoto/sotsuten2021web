@@ -1,6 +1,7 @@
 <template lang="pug">
 div#top
   div.container
+    MobileHeader
     div.container_list.top
       div.container_list-wrap
         nuxt-link(to="/research") 研究紹介
@@ -48,12 +49,13 @@ div#top
 
 <script>
 import Card from '~/components/Card.vue'
-import Title from '~/components/Title.vue'
+import MobileHeader from '~/components/MobileHeader.vue'
 import researchData from '~/assets/json/research.json'
 
 export default {
   components: {
-    Card
+    Card,
+    MobileHeader
   },
 
   data(){

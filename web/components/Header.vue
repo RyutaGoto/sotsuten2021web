@@ -87,8 +87,6 @@ export default {
           width: 32px;
           span
             background: #555;
-            //border-radius: 3px;
-            //box-shadow: 0 1px 4px 0 #5a5a5a;
             content: '';
             cursor: pointer;
             display: block;
@@ -152,7 +150,6 @@ export default {
         #nav-input:checked ~ #nav-content
           -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-          box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
           
 
           
@@ -163,7 +160,6 @@ export default {
 @media screen and (min-width: 701px) //パソコン
   .header
     background-color: #fff;
-    //box-shadow: 0 4px 8px #eee;
     display: flex;
     flex-direction: column;
     left: 0;

@@ -23,6 +23,12 @@
   "LazyLogo": {
     "description": "Auto imported from components/Logo.vue"
   },
+  "MobileHeader": {
+    "description": "Auto imported from components/MobileHeader.vue"
+  },
+  "LazyMobileHeader": {
+    "description": "Auto imported from components/MobileHeader.vue"
+  },
   "Record": {
     "description": "Auto imported from components/Record.vue"
   },
